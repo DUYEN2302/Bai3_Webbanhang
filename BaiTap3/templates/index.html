@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="{{ url_for('static', filename='images/banner.jpg') }}" alt="Banner">
+    </section>
+
+    <!-- Khám Phá Sản Phẩm -->
+    <section class="explore-section">
+        <h2><a href="{{ url_for('products_page') }}">Khám Phá Sản Phẩm</a></h2>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bán Quần</p>
+    </footer>
+
+</body>
+</html>
